@@ -25,12 +25,12 @@ public class Menu extends World
     
     public void act(){
         if (Greenfoot.isKeyDown("UP") && opcion!=0) {opcion++;}
-        if (Greenfoot.isKeyDown("DOWN") && opcion!=1) {opcion--;} //asignación de telcas
+        if (Greenfoot.isKeyDown("DOWN") && opcion!=1) {opcion--;} //asignación de teclas
         
         if(opcion>=2) opcion=0;
         if (opcion<0) opcion=1;
         
-        flecha.setLocation(220,250 + (opcion*100)); //posicios de la espada
+        flecha.setLocation(220, 250 + (opcion * 70)); // posición de la espada
         
         if (Greenfoot.isKeyDown("ENTER")){
             switch(opcion){
